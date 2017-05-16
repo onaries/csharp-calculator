@@ -78,7 +78,7 @@ namespace calculator1
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Ctrl + C키를 누르면 종료됩니다");
+            Console.WriteLine("Ctrl + C키를 누르면 종료됩니다\n");
             while (true)
             {
                 // 변수 초기화
@@ -88,7 +88,7 @@ namespace calculator1
                 // 숫자 입력 1
                 try
                 {
-                    Console.Write("숫자를 입력하시오 : ");
+                    Console.Write("첫번째 숫자를 입력하시오 : ");
                     a = double.Parse(Console.ReadLine());
                 }
                 catch(FormatException)
@@ -99,7 +99,7 @@ namespace calculator1
                 // 숫자 입력 2
                 try
                 {
-                    Console.Write("숫자를 입력하시오 : ");
+                    Console.Write("두번째 숫자를 입력하시오 : ");
                     b = double.Parse(Console.ReadLine());
                 }
                 catch (FormatException)
@@ -122,27 +122,28 @@ namespace calculator1
                 if (oper.Equals('+'))
                 {
                     Adder adder = new Adder(a, b);
-                    Console.WriteLine("결과 : {0}", adder.Calculate());
+                    Console.WriteLine("결과 : " + adder.Calculate());
                 }
                 else if (oper.Equals('-'))
                 {
                     Subtractor subtractor = new Subtractor(a, b);
-                    Console.WriteLine("결과 : {0}", subtractor.Calculate());
+                    Console.WriteLine("결과 : " + subtractor.Calculate());
                 }
                 else if (oper.Equals('*'))
                 {
                     Multiplier multiplier = new Multiplier(a, b);
-                    Console.WriteLine("결과 : {0}", multiplier.Calculate());
+                    Console.WriteLine("결과 : " + multiplier.Calculate());
                 }
                 else if (oper.Equals('/'))
                 {
                     Divider divider = new Divider(a, b);
-                    Console.WriteLine("결과 : {0}", divider.Calculate());
+                    Console.WriteLine("결과 : " + divider.Calculate());
                 }
                 else
                 {
                     Console.WriteLine("인식할 수 없는 연산자입니다");
                 }
+                Console.WriteLine();
             }
         }
     }
