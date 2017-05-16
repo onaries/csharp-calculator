@@ -1,0 +1,6 @@
+c:\users\nanodir\documents\visual studio 2017\Projects\calculator1\bin\Debug\calculator1.exe.config
+c:\users\nanodir\documents\visual studio 2017\Projects\calculator1\bin\Debug\calculator1.exe
+c:\users\nanodir\documents\visual studio 2017\Projects\calculator1\bin\Debug\calculator1.pdb
+c:\users\nanodir\documents\visual studio 2017\Projects\calculator1\obj\Debug\calculator1.csprojResolveAssemblyReference.cache
+c:\users\nanodir\documents\visual studio 2017\Projects\calculator1\obj\Debug\calculator1.exe
+c:\users\nanodir\documents\visual studio 2017\Projects\calculator1\obj\Debug\calculator1.pdb
