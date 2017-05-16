@@ -95,17 +95,6 @@ namespace calculator1
                 {
                     Console.WriteLine("잘못된 문자입니다");
                 }
-                
-                // 숫자 입력 2
-                try
-                {
-                    Console.Write("두번째 숫자를 입력하시오 : ");
-                    b = double.Parse(Console.ReadLine());
-                }
-                catch (FormatException)
-                {
-                    Console.WriteLine("잘못된 문자입니다");
-                }
 
                 // 연산자 입력
                 try
@@ -117,7 +106,18 @@ namespace calculator1
                 {
                     Console.WriteLine("잘못된 문자입니다");
                 }
-                
+
+                // 숫자 입력 2
+                try
+                {
+                    Console.Write("두번째 숫자를 입력하시오 : ");
+                    b = double.Parse(Console.ReadLine());
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("잘못된 문자입니다");
+                }
+
                 // 연산자 판별 후 결과 출력
                 if (oper.Equals('+'))
                 {
